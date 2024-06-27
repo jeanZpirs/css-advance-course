@@ -53,3 +53,33 @@ Los pseudo-elementos son elementos virtuales creados desde css que se posicionan
 ### Propiedad transition
 
 Podemos usar transition para que los cambios de css se hagan de forma animada y suave.
+
+### Tres pilares para escribir buen código CSS y HTML.
+
+1. Responsive Design:
+
+Diseños fluidos, media queries, imágenes responsivas, uso de unidades responsivas, practicar desktop first vs mobile first.
+
+2. Código mantenible y escalable:
+
+Código limpio, fácil de entender, escalable, reusable, archivos organizados, nombramientos de clases y buen estructurado del HTML.
+
+3. Rendimiento de una web:
+
+Minimizar la peticiones http, el código, comprimir el código, usar pre-procesadores de css (SASS), minimizar imágenes, comprimir imágenes.
+
+### ¿Cómo funciona CSS detrás de escena?
+
+¿Qué pasa cuando con el código de css cuando carga la página web?
+
+![css-load](imgs_readme/css-load.png)
+
+Cuando el CSS es cargado pasa por 2 procesos o 2 pasos, el procesa de resolver conflictos de declaraciones css y el procesamiento de valores finales en CSS.
+
+Cuando resolvemos conflictos usamos un proceso llamado "Cascada", este proceso se encarga de combinar diferentes estilos resolviendo conflictos entre diferentes reglas CSS que son aplicas a cierto elemento.
+
+¿Cómo hacer el proceso de cascada para resolver los conflictos?
+
+Toma en cuenta la importancia, luego la especificidad y al final el orden del código escrito.
+
+![How work css cascade](imgs_readme/cascade-work.png)
