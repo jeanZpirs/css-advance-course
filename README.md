@@ -78,8 +78,61 @@ Cuando el CSS es cargado pasa por 2 procesos o 2 pasos, el procesa de resolver c
 
 Cuando resolvemos conflictos usamos un proceso llamado "Cascada", este proceso se encarga de combinar diferentes estilos resolviendo conflictos entre diferentes reglas CSS que son aplicas a cierto elemento.
 
-¿Cómo hacer el proceso de cascada para resolver los conflictos?
+1. ¿Cómo hacer el proceso de cascada para resolver los conflictos?
 
 Toma en cuenta la importancia, luego la especificidad y al final el orden del código escrito.
 
 ![How work css cascade](imgs_readme/cascade-work.png)
+
+2. ¿Cómo procesa los valores CSS?
+
+Unidades:
+
+- <strong>%</strong> en tamaño de elemento: los porcentajes lo calcula teniendo en cuenta al ancho del elemento padre.
+- <strong>%</strong> en tamaño de fuente: los porcentajes se calculan teniendo en cuenta el tamaño de fuente del elemento padre.
+- <strong>em</strong> en tamaño de fuente: Se calcula teniendo en cuenta al elemento padre inmediato.
+
+- <strong>rem</strong>: se calcula teniendo en cuenta el elemento raíz (<hml>).
+
+![How css parsed values](imgs_readme/css-parsed-values.png)
+
+3. Herencia en CSS
+
+Existe propiedades que se heredan en css del elemento padre al elemento hijo, como las propiedades de tipografía. La herencia es bastante intuitiva en CSS por la que no es realmente compleja.
+
+![inheritcence](imgs_readme/herencia.png)
+
+### ¿Cómo CSS renderiza una web?
+
+Después de los de los procesos de CSS viene lo que es el modelo de formato visual CSS, que es un algoritmo que calcula las cajas y determina el diseño de las cajas para cada elemento en el árbol de representación con el fin de determinar el diseño final de la página.
+
+El algoritmo tiene en cuenta los siguientes factores:
+
+- Tamaño de cajas: el modelo de caja
+- Tipo de caja: En linea, bloque, en linea y bloque.
+- Esquema posicional: flotantes y posicionamientos.
+- Apilado de contextos
+- Otros elementos del árbol.
+- Tamaño del viewport, dimensiones de imágenes, etc.
+
+### Arquitectura CSS, componentes y metodología BEM
+
+¿Cómo debemos pensar en los diseños y como debemos pensar en nuestro código?
+
+Una buena mentalidad a la hora de crear proyectos, es <strong>pensar<strong>, <strong>construir<strong>, <strong>arquitectura<strong>.
+
+Pensar: Antes de construir la página debemos pensar en el diseño.
+
+Para eso podemos usar el principio <strong>component-drive design<strong>, basado en:
+
+- Separar en bloques cada parte de la web.
+- Colección de componente unidos para el diseño general de la página.
+- Reutilizabas para el proyecto y diferentes proyectos.
+- Deben ser independientes.
+
+Construir: Necesitamos una buena estrategia y estructura consistentes para nombrar nuestras clases. Uno de las mejores es el metodo BEM:
+
+- Block Element Modifier
+- Block: Componente independiente que es significativo por sí mismo.
+- Element: Parte del bloque que no tiene significado por sí mismo.
+- Modifier: Una versión diferente del elemento.
