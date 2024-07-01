@@ -54,6 +54,8 @@ Los pseudo-elementos son elementos virtuales creados desde css que se posicionan
 
 Podemos usar transition para que los cambios de css se hagan de forma animada y suave.
 
+## ¿Como funciona CSS?
+
 ### Tres pilares para escribir buen código CSS y HTML.
 
 1. Responsive Design:
@@ -119,11 +121,11 @@ El algoritmo tiene en cuenta los siguientes factores:
 
 ¿Cómo debemos pensar en los diseños y como debemos pensar en nuestro código?
 
-Una buena mentalidad a la hora de crear proyectos, es <strong>pensar<strong>, <strong>construir<strong>, <strong>arquitectura<strong>.
+Una buena mentalidad a la hora de crear proyectos, es <strong>pensar</strong>, <strong>construir</strong>, <strong>arquitectura</strong>.
 
 Pensar: Antes de construir la página debemos pensar en el diseño.
 
-Para eso podemos usar el principio <strong>component-drive design<strong>, basado en:
+Para eso podemos usar el principio <strong>component-drive design</strong>, basado en:
 
 - Separar en bloques cada parte de la web.
 - Colección de componente unidos para el diseño general de la página.
@@ -136,3 +138,30 @@ Construir: Necesitamos una buena estrategia y estructura consistentes para nombr
 - Block: Componente independiente que es significativo por sí mismo.
 - Element: Parte del bloque que no tiene significado por sí mismo.
 - Modifier: Una versión diferente del elemento.
+
+Arquitectura:
+
+También debemos tener una buena estructura de carpetas donde estarán nuestros archivos CSS.
+
+Una buena solución sería el patrón 7-1, siete diferentes carpetas y un solo archivo principal.
+
+## Introducción a SASS
+
+SASS es un pre-procesador de CSS, una extensión de CSS que añade funciones y características al lenguaje.
+
+Características que SASS nos da:
+
+- Variables: valores reutilizables como colores, tamaños y espaciados, etc.
+- Nesting: Anidamiento de selectores, permitiendo escribir menos código.
+- Operadores: Podemos hacer cálculos matemáticos en CSS.
+- Imports: Podemos escribir CSS en diferentes archivos y unir todos en un solo archivo.
+- Mixins: Podemos escribir código CSS reutilizable.
+- Funciones: Similar a los mixins pero este produce un valor que podemos usar.
+- Extends: Se pueden usar para hacer que diferentes selectores hereden declaraciones que son comunes a ellos.
+- Control de directivas: para escribir codigo complejo usando condicionales y bucles.
+
+### Implementando patron 7 - 1 en SASS
+
+Ayuda muchísimo organizando nuestros archivos SCSS, lo hace mantenible, escalable y mucho mas fácil de leer.
+
+![patron-7-1](imgs_readme/patron7-1.png)
