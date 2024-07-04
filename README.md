@@ -165,3 +165,9 @@ Características que SASS nos da:
 Ayuda muchísimo organizando nuestros archivos SCSS, lo hace mantenible, escalable y mucho mas fácil de leer.
 
 ![patron-7-1](imgs_readme/patron7-1.png)
+
+### Color de texto tipo background - background-clip
+
+El fondo se aplica al área de contenido del texto, permitiendo que el fondo se recorte en las formas del texto.
+
+![Background-Clip](imgs_readme/background-clip.png)
