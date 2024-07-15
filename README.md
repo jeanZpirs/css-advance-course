@@ -171,3 +171,87 @@ Ayuda muchísimo organizando nuestros archivos SCSS, lo hace mantenible, escalab
 El fondo se aplica al área de contenido del texto, permitiendo que el fondo se recorte en las formas del texto.
 
 ![Background-Clip](imgs_readme/background-clip.png)
+
+### Hover, Not:Hover y Outline
+
+Un truco que podemos hacer para darle reacción a otros elementos cuando pasamos el mouse por encima haciendo `hover`, es aplicar en los demás la pseudoclase `:not(:hover)`.
+
+![trick-hover](imgs_readme/trick-hover.png)
+
+Podemos usar la propiedad `outline-offset` para agregar un espaciado entre el elemento y su `outline`.
+
+![hover-outline](imgs_readme/hover-outline.png)
+
+### Skew en el elemento padre sin afectar los demás
+
+Simplemente podemos aplicar `skew` al elemento padre y darle `skew` contrario a los elementos hijos.
+
+![parent-skew](imgs_readme/parent-skew.png)
+
+### Rotación de 180º a los elementos
+
+Podemos aplicar el siguiente codigo para rotar un elemento.
+
+```
+transform: rotateY(180deg);
+```
+
+Para eliminar la cara posterior del elemento o dejarlo invisible usamos
+
+```
+backface-visibility: hidden
+```
+
+Para una rotación con una visualización correcta se le agrega la propiedad `perspective` con una unidad de tamaño grande.
+
+```
+perspective: 150rem;
+```
+
+### Agregado de efectos o filtro a las imagenes.
+
+Para agregar efectos como cambiado de color, colores negativos, mas contraste, etc, tenemos una propiedad que nos da efectos predefinidos `background-blend-mode`, tiene una buena variedad de efectos y filtros.
+
+### Igualando cajas divididas
+
+A veces tenemos un titulo que se divide en dos linea por poco espacio, este titulo tenia un padding en donde solo se aplica al inicio y al final del texto.
+
+![alt text](imgs_readme/box-break-ex1.png)
+
+Entonces podemos aplicar `box-decoration-break: clone` para que ambos cuadros tomen el padding.
+
+![alt text](imgs_readme/box-break-ex2.png)
+
+### Texto o elemento rodeando otros elementos
+
+Para tener elemento rodeando a otros podemos utilizar las siguientes propiedades:
+
+```
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+```
+
+`float`: para que los elementos alrededor se junten.
+`shape-outside` : para darle forma de circulo al contorno o caja del elemento.
+
+### Filtros en las imagenes
+
+Podemos usar la propiedad `filter` para agregar filtro como brillo, blur, opacidad, etc.
+
+### Linear gradient solo a mitad del elemento.
+
+Con el siguiente código podemos agregar un `linear-gradient` que solo se vea por la mitad y ademas de que podemos rotarlo con `deg`.
+
+```
+    background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.8) 0%,
+      rgba($color-white, 0.8) 50%,
+      transparent 50%
+    ),
+    url("../img/nat-10.jpg");
+
+```
+
+![alt text](imgs_readme/mitad-color.png)
