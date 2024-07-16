@@ -255,3 +255,19 @@ Con el siguiente código podemos agregar un `linear-gradient` que solo se vea po
 ```
 
 ![alt text](imgs_readme/mitad-color.png)
+
+### Formularios
+
+Podemos editar los `inputs` de tipo texto con las propiedades y pseudo clase `placeholder` y `focus`.
+
+Es por el momento dar estilos a los elementos tipo radio, check y select.
+
+Podemos combinarlo con el label que se empareja con los inputs y creando un pseudo-elemento darle la forma que queramos.
+
+### Selector de hermano
+
+Hasta ahora solo vimos seleccionar hijos desde el elemento padre.
+
+Pero ahora con el selector `+` y `~` podemos seleccionar elemento hermanos.
+
+![alt text](imgs_readme/siblings-select.png)
