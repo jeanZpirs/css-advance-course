@@ -271,3 +271,13 @@ Hasta ahora solo vimos seleccionar hijos desde el elemento padre.
 Pero ahora con el selector `+` y `~` podemos seleccionar elemento hermanos.
 
 ![alt text](imgs_readme/siblings-select.png)
+
+### Cubic Biezer
+
+Podemos agregarla a la propiedad `transition` para poder agregar animaciones de retroceso o aceleración.
+
+![cubic-bezier](imgs_readme/cubic-bezier.png)
+
+### Transform-origin
+
+Es una propiedad que no permite elegir desde que lado del elemento aplicar los efectos del `transform`.
