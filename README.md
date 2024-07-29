@@ -281,3 +281,18 @@ Podemos agregarla a la propiedad `transition` para poder agregar animaciones de 
 ### Transform-origin
 
 Es una propiedad que no permite elegir desde que lado del elemento aplicar los efectos del `transform`.
+
+### Media Queries
+
+Existen dos prácticas a la hora de desarrollar una web y hacerla receptiva a cambios de tamaño de pantalla.
+
+- Desktop First - Hacer la página empezando para pc de escritorio.
+- Mobile First - Hacer la página empezando para teléfonos.
+
+Con desktop-first aplicamos media queries preguntando si el ancho es `<= 600px?`, menor o igual que el ancho de 600px, entonces sí es verdadero los estilos se pueden aplicar.
+
+Y con mobile-first aplicamos media queries preguntando si el ancho es `>= 600px?`, es mayor o igual que el ancho de 600px, entonces sí es verdadero se aplicaron los estilos.
+
+Podemos preguntarnos que pasa cuando el ancho de pantalla es de 800px, dando como verdadera dos media queries de 600px y 900px, entonces creando conflictos entre estilos pero esto se arregla mediante el orden en el que está escrito el código.
+
+Tenemos que saber en que anchos de pantalla aplicar los media queries, la mejor manera es tomar un ancho que cubra el mayor porcentaje de anchos de pantalla o podemos ver nuestro diseño y a medida que se vaya reduciendo la pantalla ir arreglando los estilos.
