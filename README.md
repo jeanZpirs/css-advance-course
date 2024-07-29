@@ -296,3 +296,9 @@ Y con mobile-first aplicamos media queries preguntando si el ancho es `>= 600px?
 Podemos preguntarnos que pasa cuando el ancho de pantalla es de 800px, dando como verdadera dos media queries de 600px y 900px, entonces creando conflictos entre estilos pero esto se arregla mediante el orden en el que está escrito el código.
 
 Tenemos que saber en que anchos de pantalla aplicar los media queries, la mejor manera es tomar un ancho que cubra el mayor porcentaje de anchos de pantalla o podemos ver nuestro diseño y a medida que se vaya reduciendo la pantalla ir arreglando los estilos.
+
+### SASS y Media Queries
+
+Gracias a SASS podemos aplicar algunas prácticas para que la codificación sean más sencilla, podemos crear mixins y usar directivas de sass. (@if, @content)
+
+![sass_mediaqueries](imgs_readme/sass_mediaqueries.png)
